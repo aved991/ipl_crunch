@@ -1,3 +1,5 @@
+Combine the given 2 datasets before any analysis tasks<br>
+
 Dataset is in csv & excel<br>
 Tools used - SQL, Tableau Public<br>
 <br>
