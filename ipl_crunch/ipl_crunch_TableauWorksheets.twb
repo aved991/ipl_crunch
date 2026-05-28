@@ -1,0 +1,2568 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ipl_crunch_csv' inline='true' name='federated.1btu2s70uklqwo1et0xel1u0xmwb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ipl_crunch_csv' name='textscan.13k1slh029a9nd18avj591pjrd2x'>
+            <connection class='textscan' directory='C:/Users/Aved/OneDrive/Desktop/Ms_SQL_Server/ipl_crunch' filename='ipl_crunch_csv.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13k1slh029a9nd18avj591pjrd2x' name='ipl_crunch_csv.csv' table='[ipl_crunch_csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='match_id' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='integer' name='season' ordinal='2' />
+            <column datatype='string' name='event' ordinal='3' />
+            <column datatype='string' name='venue' ordinal='4' />
+            <column datatype='string' name='city' ordinal='5' />
+            <column datatype='string' name='team1' ordinal='6' />
+            <column datatype='string' name='team2' ordinal='7' />
+            <column datatype='string' name='toss_winner' ordinal='8' />
+            <column datatype='string' name='toss_decision' ordinal='9' />
+            <column datatype='string' name='winner' ordinal='10' />
+            <column datatype='integer' name='win_by_runs' ordinal='11' />
+            <column datatype='integer' name='win_by_wickets' ordinal='12' />
+            <column datatype='string' name='player_of_match' ordinal='13' />
+            <column datatype='integer' name='innings' ordinal='14' />
+            <column datatype='string' name='batting_team' ordinal='15' />
+            <column datatype='integer' name='over' ordinal='16' />
+            <column datatype='integer' name='ball' ordinal='17' />
+            <column datatype='string' name='batter' ordinal='18' />
+            <column datatype='string' name='bowler' ordinal='19' />
+            <column datatype='string' name='non_striker' ordinal='20' />
+            <column datatype='integer' name='runs_batter' ordinal='21' />
+            <column datatype='integer' name='runs_extras' ordinal='22' />
+            <column datatype='integer' name='runs_total' ordinal='23' />
+            <column datatype='integer' name='extras_wides' ordinal='24' />
+            <column datatype='integer' name='extras_noballs' ordinal='25' />
+            <column datatype='integer' name='extras_byes' ordinal='26' />
+            <column datatype='integer' name='extras_legbyes' ordinal='27' />
+            <column datatype='string' name='wicket_kind' ordinal='28' />
+            <column datatype='string' name='wicket_player_out' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>event</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_runs]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>win_by_runs</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_wickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_wickets]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>win_by_wickets</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>innings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[innings]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>innings</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[over]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>over</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_batter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runs_batter]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>runs_batter</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_extras</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runs_extras]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>runs_extras</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runs_total]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>runs_total</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras_wides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extras_wides]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>extras_wides</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras_noballs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extras_noballs]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>extras_noballs</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras_byes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extras_byes]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>extras_byes</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras_legbyes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extras_legbyes]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>extras_legbyes</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wicket_kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wicket_kind]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>wicket_kind</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wicket_player_out</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wicket_player_out]</local-name>
+            <parent-name>[ipl_crunch_csv.csv]</parent-name>
+            <remote-alias>wicket_player_out</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Phase' datatype='string' name='[Calculation_1536290428819038208]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [over]&lt;=6 THEN &quot;PowerPlay&quot;&#13;&#10;ELSEif  [over]&gt;=6 AND [over]&lt;=15 THEN &quot;Middle Overs&quot;&#13;&#10;ELSE &quot;Death Overs&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Toss Result(winner)' datatype='string' name='[Calculation_1536290428819918849]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [toss_winner] =[winner]&#13;&#10;THEN &quot;Toss Winner Won Match&quot;&#13;&#10;ELSE &quot;Toss Winner Lost Match&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Batting&amp;win' datatype='string' name='[Calculation_1536290428822228994]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [batting_team]=[winner]&#13;&#10;then &quot;Winning Team&quot;&#13;&#10;else &quot;Losing Team&quot;&#13;&#10;END' />
+      </column>
+      <column caption='MatchPhaseID' datatype='string' name='[Calculation_1536290428823597059]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([match_id]) + &quot;-&quot; + [Calculation_1536290428819038208] + &quot;-&quot; + [batting_team]' />
+      </column>
+      <column caption='Phase Runs' datatype='integer' name='[Calculation_1536290428823941124]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [match_id], [batting_team], [Calculation_1536290428819038208] : SUM([runs_total]) }' />
+      </column>
+      <column caption='Wickets' datatype='integer' name='[Calculation_1536290429327556613]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [wicket_kind] != &quot;run out&quot;&#13;&#10;AND [wicket_kind] != &quot;retired hurt&quot;&#13;&#10;AND NOT ISNULL([wicket_kind])&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='ipl_crunch_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Event' datatype='string' name='[event]' role='dimension' type='nominal' />
+      <column caption='Extras Byes' datatype='integer' name='[extras_byes]' role='measure' type='quantitative' />
+      <column caption='Extras Legbyes' datatype='integer' name='[extras_legbyes]' role='measure' type='quantitative' />
+      <column caption='Extras Noballs' datatype='integer' name='[extras_noballs]' role='measure' type='quantitative' />
+      <column caption='Extras Wides' datatype='integer' name='[extras_wides]' role='measure' type='quantitative' />
+      <column caption='Innings' datatype='integer' name='[innings]' role='measure' type='quantitative' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Runs Batter' datatype='integer' name='[runs_batter]' role='measure' type='quantitative' />
+      <column caption='Runs Extras' datatype='integer' name='[runs_extras]' role='measure' type='quantitative' />
+      <column caption='Runs Total' datatype='integer' name='[runs_total]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+      <column caption='Wicket Kind' datatype='string' name='[wicket_kind]' role='dimension' type='nominal' />
+      <column caption='Wicket Player Out' datatype='string' name='[wicket_player_out]' role='dimension' type='nominal' />
+      <column caption='Win By Runs' datatype='integer' name='[win_by_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Wickets' datatype='integer' name='[win_by_wickets]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1536290428819918849]' derivation='None' name='[none:Calculation_1536290428819918849:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1536290428822228994]' derivation='None' name='[none:Calculation_1536290428822228994:nk]' pivot='key' type='nominal' />
+      <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+      <column-instance column='[bowler]' derivation='None' name='[none:bowler:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Aved/AppData/Local/Temp/TableauTemp/#TableauTemp_0l5l82l0fdn5q415ivkc01mluwrd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/26/2026 10:03:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[match_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6229</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4351</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>event</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>venue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[venue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>venue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>team1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[team1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>team1</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>team2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[team2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>team2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>toss_winner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[toss_winner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>toss_winner</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>toss_decision</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[toss_decision]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>toss_decision</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[winner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winner</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>win_by_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[win_by_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>win_by_runs</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>win_by_wickets</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[win_by_wickets]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>win_by_wickets</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_of_match</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_of_match]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_of_match</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>992</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>innings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[innings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>innings</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batting_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batting_team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batting_team</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>over</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[over]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>over</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ball</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ball]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ball</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1755</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bowler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bowler]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bowler</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1476</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>non_striker</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[non_striker]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>non_striker</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1507</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runs_batter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[runs_batter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runs_batter</remote-alias>
+              <ordinal>21</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runs_extras</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[runs_extras]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runs_extras</remote-alias>
+              <ordinal>22</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runs_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[runs_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runs_total</remote-alias>
+              <ordinal>23</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extras_wides</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extras_wides]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extras_wides</remote-alias>
+              <ordinal>24</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extras_noballs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extras_noballs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extras_noballs</remote-alias>
+              <ordinal>25</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extras_byes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extras_byes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extras_byes</remote-alias>
+              <ordinal>26</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extras_legbyes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extras_legbyes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extras_legbyes</remote-alias>
+              <ordinal>27</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wicket_kind</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wicket_kind]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wicket_kind</remote-alias>
+              <ordinal>28</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wicket_player_out</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wicket_player_out]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wicket_player_out</remote-alias>
+              <ordinal>29</ordinal>
+              <family>ipl_crunch_csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2562</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:bowler:nk]' type='palette'>
+            <map to='#33a100'>
+              <bucket>&quot;YS Chahal&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;B Kumar&quot;</bucket>
+            </map>
+            <map to='#9a0ab7'>
+              <bucket>&quot;SP Narine&quot;</bucket>
+            </map>
+            <map to='#f2e22f'>
+              <bucket>&quot;JJ Bumrah&quot;</bucket>
+            </map>
+            <map to='#ff0000'>
+              <bucket>&quot;PP Chawla&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1536290428819918849:nk]' type='palette'>
+            <map to='#3538f2'>
+              <bucket>&quot;Toss Winner Won Match&quot;</bucket>
+            </map>
+            <map to='#e60000'>
+              <bucket>&quot;Toss Winner Lost Match&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1536290428822228994:nk]' type='palette'>
+            <map to='#0008a7'>
+              <bucket>&quot;Losing Team&quot;</bucket>
+            </map>
+            <map to='#d0d304'>
+              <bucket>&quot;Winning Team&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:batter:nk]' type='palette'>
+            <map to='#0055ff'>
+              <bucket>&quot;KL Rahul&quot;</bucket>
+            </map>
+            <map to='#c027fc'>
+              <bucket>&quot;S Dhawan&quot;</bucket>
+            </map>
+            <map to='#ff0808'>
+              <bucket>&quot;V Kohli&quot;</bucket>
+            </map>
+            <map to='#ff932d'>
+              <bucket>&quot;DA Warner&quot;</bucket>
+            </map>
+            <map to='#ffd54d'>
+              <bucket>&quot;RG Sharma&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ipl_crunch_csv.csv' id='ipl_crunch_csv.csv_756406AD8D9D42EEAF61A4383510EEEF'>
+            <properties context=''>
+              <relation connection='textscan.13k1slh029a9nd18avj591pjrd2x' name='ipl_crunch_csv.csv' table='[ipl_crunch_csv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='integer' name='season' ordinal='2' />
+                  <column datatype='string' name='event' ordinal='3' />
+                  <column datatype='string' name='venue' ordinal='4' />
+                  <column datatype='string' name='city' ordinal='5' />
+                  <column datatype='string' name='team1' ordinal='6' />
+                  <column datatype='string' name='team2' ordinal='7' />
+                  <column datatype='string' name='toss_winner' ordinal='8' />
+                  <column datatype='string' name='toss_decision' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='integer' name='win_by_runs' ordinal='11' />
+                  <column datatype='integer' name='win_by_wickets' ordinal='12' />
+                  <column datatype='string' name='player_of_match' ordinal='13' />
+                  <column datatype='integer' name='innings' ordinal='14' />
+                  <column datatype='string' name='batting_team' ordinal='15' />
+                  <column datatype='integer' name='over' ordinal='16' />
+                  <column datatype='integer' name='ball' ordinal='17' />
+                  <column datatype='string' name='batter' ordinal='18' />
+                  <column datatype='string' name='bowler' ordinal='19' />
+                  <column datatype='string' name='non_striker' ordinal='20' />
+                  <column datatype='integer' name='runs_batter' ordinal='21' />
+                  <column datatype='integer' name='runs_extras' ordinal='22' />
+                  <column datatype='integer' name='runs_total' ordinal='23' />
+                  <column datatype='integer' name='extras_wides' ordinal='24' />
+                  <column datatype='integer' name='extras_noballs' ordinal='25' />
+                  <column datatype='integer' name='extras_byes' ordinal='26' />
+                  <column datatype='integer' name='extras_legbyes' ordinal='27' />
+                  <column datatype='string' name='wicket_kind' ordinal='28' />
+                  <column datatype='string' name='wicket_player_out' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Phase Impact'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_crunch_csv' name='federated.1btu2s70uklqwo1et0xel1u0xmwb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btu2s70uklqwo1et0xel1u0xmwb'>
+            <column caption='Phase' datatype='string' name='[Calculation_1536290428819038208]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [over]&lt;=6 THEN &quot;PowerPlay&quot;&#13;&#10;ELSEif  [over]&gt;=6 AND [over]&lt;=15 THEN &quot;Middle Overs&quot;&#13;&#10;ELSE &quot;Death Overs&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Batting&amp;win' datatype='string' name='[Calculation_1536290428822228994]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [batting_team]=[winner]&#13;&#10;then &quot;Winning Team&quot;&#13;&#10;else &quot;Losing Team&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Phase Runs' datatype='integer' name='[Calculation_1536290428823941124]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [match_id], [batting_team], [Calculation_1536290428819038208] : SUM([runs_total]) }' />
+            </column>
+            <column-instance column='[Calculation_1536290428823941124]' derivation='Avg' name='[avg:Calculation_1536290428823941124:qk]' pivot='key' type='quantitative' />
+            <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+            <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1536290428819038208]' derivation='None' name='[none:Calculation_1536290428819038208:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1536290428822228994]' derivation='None' name='[none:Calculation_1536290428822228994:nk]' pivot='key' type='nominal' />
+            <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+            <column caption='Runs Total' datatype='integer' name='[runs_total]' role='measure' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819038208:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;PowerPlay&quot;</bucket>
+              <bucket>&quot;Middle Overs&quot;</bucket>
+              <bucket>&quot;Death Overs&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819038208:nk]' value='161' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428822228994:nk]' />
+              <lod column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428822228994:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[avg:Calculation_1536290428823941124:qk]</rows>
+        <cols>([federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819038208:nk] / [federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428822228994:nk])</cols>
+      </table>
+      <simple-id uuid='{301AE5B9-82F1-4EDB-910C-648A2777BFAE}' />
+    </worksheet>
+    <worksheet name='Top 5 Batters'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_crunch_csv' name='federated.1btu2s70uklqwo1et0xel1u0xmwb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btu2s70uklqwo1et0xel1u0xmwb'>
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Batter' datatype='integer' name='[runs_batter]' role='measure' type='quantitative' />
+            <column-instance column='[runs_batter]' derivation='Sum' name='[sum:runs_batter:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([runs_batter])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Ashish Reddy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Badoni&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Chandila&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Chopra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Choudhary&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Dananjaya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Flintoff&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Kamboj&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Kumble&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Manohar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Mhatre&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Mishra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Mithun&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Mukund&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Nehra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Nortje&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Raghuvanshi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Symonds&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Tomar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Uniyal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;A Zampa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AA Bilakhia&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AA Chavan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AA Jhunjhunwala&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AA Kulkarni&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AA Noffke&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AB Agarkar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AB Barath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AB de Villiers&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AB Dinda&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AB McDonald&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Abdul Basith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Abdul Samad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Abdur Razzak&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Abhishek Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Abishek Porel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AC Blizzard&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AC Gilchrist&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AC Thomas&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AC Voges&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AD Hales&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AD Mascarenhas&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AD Mathews&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AD Nath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AD Russell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AF Milne&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AG Murtaza&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AG Paunikar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AJ Finch&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AJ Hosein&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AJ Turner&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AJ Tye&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AK Markram&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Akash Deep&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Akash Madhwal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Akshat Raghuwanshi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AL Menaria&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AM Nayar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AM Rahane&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Aman Hakim Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AN Ahmed&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AN Ghosh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Aniket Verma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Anirudh Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ankit Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ankit Soni&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Anmolpreet Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Anuj Rawat&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Anureet Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AP Dole&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AP Majumdar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AP Tare&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AR Bawne&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AR Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Arjun Tendulkar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Arshad Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Arshad Khan (2)&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Arshdeep Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AS Joseph&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AS Rajpoot&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AS Raut&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AS Roy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AS Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ashok Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ashutosh Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ashwani Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AT Carey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AT Rayudu&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Atharva Taide&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AU Rashid&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;AUK Pathan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Auqib Nabi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Avesh Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Azhar Mahmood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Azmatullah Omarzai&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Akhil&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Chipli&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Indrajith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Laughlin&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Lee&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Sai Sudharsan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Stanlake&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;B Sumanth&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BA Bhatt&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BA Stokes&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Basil Thampi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BAW Mendis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BB McCullum&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BB Samantray&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BB Sran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BCJ Cutting&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BE Hendricks&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Bipul Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BJ Haddin&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BJ Hodge&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BJ Rohrer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BKG Mendis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BMAJ Mendis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BR Dunk&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;BR Sharath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Brijesh Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Bosch&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Connolly&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C de Grandhomme&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Green&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Madan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Munro&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Nanda&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;C Sakariya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CA Ingram&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CA Lynn&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CA Pujara&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CH Gayle&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CH Morris&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CJ Anderson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CJ Ferguson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CJ Jordan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CJ McKay&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CK Kapugedera&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CK Langeveldt&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CL White&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CM Gautam&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CR Brathwaite&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CR Woakes&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CRD Fernando&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;CV Varun&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Brevis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D du Preez&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Ferreira&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Kalyankrishna&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Padikkal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Pretorius&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Salunkhe&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;D Wiese&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DA Miller&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DA Payne&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DA Warner&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DAJ Bracewell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DB Das&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DB Ravi Teja&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DE Bollinger&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DG Nalkande&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DH Yagnik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Dhruv Jurel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Bravo&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Harris&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Hooda&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Hussey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Jacobs&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Malan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Mitchell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Muthuswami&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Thornely&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJ Willey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJG Sammy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DJM Short&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DL Chahar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DL Vettori&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DM Bravo&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DNT Zoysa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DP Conway&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DP Nannes&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DP Vijaykumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DPMD Jayawardene&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DR Martyn&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DR Sams&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DR Shorey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DR Smith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DS Kulkarni&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DS Lehmann&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DS Rathi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DT Christian&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DT Patil&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DV Malewar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;DW Steyn&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;E Lewis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;E Malinga&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;EJG Morgan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;ER Dwivedi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;F Behardien&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;F du Plessis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;FA Allen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Fazalhaq Farooqi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;FH Allen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;FH Edwards&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;FY Fazal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;G Coetzee&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;G Gambhir&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GB Hogg&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GC Smith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GC Viljoen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GD McGrath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GD Phillips&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GF Linde&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GH Vihari&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GHS Garton&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GJ Bailey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GJ Maxwell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;GR Napier&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Gulbadin Naib&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Gurkeerat Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;H Das&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;H Klaasen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harbhajan Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harmeet Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harpreet Brar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harpreet Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harsh Dubey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Harshit Rana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HC Brook&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HE van der Dussen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HF Gurney&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HH Gibbs&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HH Pandya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Himmat Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HM Amla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HR Shokeen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;HV Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;I Malhotra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;I Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;I Udana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;IC Pandey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;IK Pathan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Imran Tahir&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Iqbal Abdulla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;IR Jaggi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;IS Sodhi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ishan Kishan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Arunkumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Botha&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Fraser-McGurk&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Overton&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Suchith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Syed Mohammad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Theron&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;J Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JA Morkel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JA Richardson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Jaskaran Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JC Archer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JC Buttler&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JD Ryder&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JD Unadkat&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JDP Oram&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JDS Neesham&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JE Root&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JE Taylor&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JEC Franklin&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JG Bethell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JH Kallis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JJ Bumrah&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JJ Roy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JJ van der Wath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JL Denly&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JL Pattinson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JM Bairstow&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JM Kemp&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JM Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JO Holder&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Joginder Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JP Behrendorff&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JP Duminy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JP Faulkner&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JP Inglis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JPR Scantlebury-Searles&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JR Hazlewood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JR Hopes&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;JR Philippe&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Goel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Gowtham&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Kartikeya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Rabada&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Upadhyay&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;K Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KA Jamieson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KA Maharaj&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KA Pollard&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KAJ Roach&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kamran Akmal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kamran Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Karanveer Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kartik Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kartik Tyagi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KB Arun Karthik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KC Cariappa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KC Sangakkara&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KD Karthik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KH Pandya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KJ Abbott&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KK Ahmed&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KK Cooper&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KK Nair&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KL Nagarkoti&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KL Rahul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KM Asif&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KM Jadhav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KMA Paul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KMDN Kulasekara&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KP Appanna&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KP Pietersen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KR Mayers&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KR Sen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Krish Bhagat&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KS Bharat&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KS Rathore&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KS Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KS Williamson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KT Maphaka&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kuldeep Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Kumar Kushagra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KV Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;KW Richardson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;L Ablish&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;L Balaji&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;L Ngidi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;L Ronchi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;L Wood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LA Carseldine&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LA Pomersbach&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Lalit Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LB Williams&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LE Plunkett&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LG Pretorius&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LH Ferguson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Liton Das&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LJ Wright&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LMP Simmons&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LPC Silva&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LR Shukla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LRPL Taylor&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;LS Livingstone&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Ashwin&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M de Lange&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Jansen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Kaif&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Kartik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Klinger&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Manhas&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Markande&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Morkel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Muralitharan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Ntini&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Prasidh Krishna&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Rawat&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Shahrukh Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Theekshana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Tiwari&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Vijay&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;M Vohra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MA Agarwal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MA Khote&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MA Starc&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MA Wood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mandeep Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mashrafe Mortaza&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mayank Dagar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MC Henriques&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MC Juneja&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MD Choudhary&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MD Mishra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MD Shanaka&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MDKJ Perera&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MEK Hussey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MF Maharoof&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MG Bracewell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MG Johnson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Misbah-ul-Haq&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Clarke&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Guptill&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Henry&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Lumb&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ McClenaghan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Owen&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Santner&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MJ Suthar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MK Lomror&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MK Pandey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MK Tiwary&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;ML Hayden&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MM Ali&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MM Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MM Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MN Samuels&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MN van Wyk&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammad Ashraful&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammad Asif&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammad Hafeez&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammad Nabi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammed Shami&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohammed Siraj&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohit Rathee&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mohsin Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MP Breetzke&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MP Stoinis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MP Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MR Marsh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MS Bhandage&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MS Bisla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MS Dhoni&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MS Gony&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MS Wade&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mujeeb Ur Rahman&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mukesh Choudhary&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mukesh Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Musheer Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Mustafizur Rahman&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MV Boucher&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;MW Short&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Burger&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Jagadeesan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Pooran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Rana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Saini&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Sindhu&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;N Wadhera&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Naman Dhir&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Navdeep Saini&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Naveen-ul-Haq&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;ND Doshi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Nithish Kumar Reddy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NJ Maddinson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NJ Rimmington&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NK Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NL McCullum&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NLTC Perera&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NM Coulter-Nile&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Noor Ahmad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NS Naik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NT Ellis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;NV Ojha&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;OA Shah&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;OC McCoy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;OF Smith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Awana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Chopra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Dogra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Dubey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Negi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Nissanka&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Parameswaran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Ray Barman&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Sahu&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;P Simran Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PA Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PA Reddy&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Pankaj Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Parvez Rasool&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PBB Rajapaksa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PC Valthaty&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PD Collingwood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PD Salt&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PHKD Mendis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PJ Cummins&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PJ Sangwan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PK Garg&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PM Sarvesh Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PN Mankad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PP Chawla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PP Hinge&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PP Ojha&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PP Shaw&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PR Shah&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PR Veer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Prince Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Priyansh Arya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PSP Handscomb&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PV Tambe&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PVD Chameera&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PVSN Raju&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PWA Mulder&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;PWH de Silva&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Q de Kock&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Ashwin&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Bhatia&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Bishnoi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Dhawan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Dravid&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R McLaren&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Minz&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Ninan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Parag&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Powell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Rampaul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Ravindra&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Sai Kishore&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Sanjay Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Sathish&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Shepherd&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Shukla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Smaran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Tewatia&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;R Vinay Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RA Bawa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RA Jadeja&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RA Tripathi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Rahmanullah Gurbaz&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ramandeep Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Rashid Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Rasikh Salam&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Ravi Bishnoi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RD Chahar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RD Gaikwad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RD Rickelton&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RE Levi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RE van der Merwe&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RG More&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RG Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RJ Gleeson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RJ Harris&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RJ Peterson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RJ Quiney&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RJW Topley&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RK Bhui&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RK Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RM Patidar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RN ten Doeschate&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RP Meredith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RP Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Bhatkal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Pant&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Powar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Raje&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Rossouw&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RR Sarwan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RS Bopara&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RS Gavaskar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RS Sodhi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RT Ponting&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RV Gomez&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RV Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;RV Uthappa&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Anirudha&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Aravind&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Arora&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Badree&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Badrinath&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Chanderpaul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Dhawan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Dube&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Gopal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Kaul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Kaushik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Ladda&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Lamichhane&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Nadeem&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Narwal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Rana&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Randiv&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Sohal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Sreesanth&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Sriram&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Tyagi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;S Vidyut&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SA Abbott&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SA Asnodkar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SA Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sachin Baby&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Salman Butt&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sameer Rizvi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sandeep Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sanvir Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Saurav Chauhan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Bangar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Dubey&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Jakati&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Joshi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Styris&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SB Wagh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SC Ganguly&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SD Chitnis&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SD Hope&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SD Lad&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SE Bond&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SE Marsh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SE Rutherford&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sediqullah Atal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SH Johnson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shahbaz Ahmed&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shahid Afridi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shakib Al Hasan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shashank Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shivam Mavi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shivam Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shivam Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shivang Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shoaib Ahmed&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shoaib Akhtar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shoaib Malik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Shubman Gill&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sikandar Raza&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Simarjeet Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SJ Srivastava&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SK Raina&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SK Rasheed&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SK Trivedi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SK Warne&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SL Malinga&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SM Curran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SM Harwood&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SM Katich&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SM Pollock&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SMSM Senanayake&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SN Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SN Thakur&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SO Hetmyer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sohail Tanvir&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SP Fleming&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SP Goswami&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SP Jackson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SP Narine&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SPD Smith&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SR Tendulkar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SR Watson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SS Cottrell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SS Iyer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SS Prabhudessai&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SS Shaikh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SS Tiwary&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;ST Jayasuriya&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;STR Binny&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SU Parakh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sumit Kumar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sunny Gupta&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Sunny Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Suryansh Shedge&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SV Samson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SW Billings&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SW Tait&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Swapnil Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;SZ Mulani&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Banton&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Henderson&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Kohler-Cadmore&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Kohli&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Natarajan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Shamsi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Stubbs&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Taibu&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;T Thushara&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TA Boult&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Tanush Kotian&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TD Paine&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TG Southee&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TH David&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Tilak Varma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TK Curran&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TL Seifert&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TL Suman&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TM Dilshan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TM Head&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TM Srivastava&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TR Birt&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TS Mills&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;TU Deshpande&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;U Kaul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;UA Birla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;UBT Chand&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Umar Gul&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Umran Malik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Urvil Patel&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;UT Khawaja&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;UT Yadav&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Kohli&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Nigam&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Pratap Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Sehwag&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Shankar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Suryavanshi&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;V Viyaskanth&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VG Arora&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VH Zol&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Vijaykumar Vyshak&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Virat Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Vishnu Vinod&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Vivrant Sharma&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VR Aaron&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VR Iyer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VRV Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VS Malik&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VS Yeligati&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VVS Laxman&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;VY Mahesh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;W Jaffer&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;WA Mota&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Washington Sundar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;WD Parnell&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;WG Jacks&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;WP Saha&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;WPUJC Vaas&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;X Thalaivan Sargunam&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;XC Bartlett&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Y Gnaneswara Rao&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Y Nagar&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Y Prithvi Raj&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Y Venugopal Rao&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YA Abdulla&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Yash Dayal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Yashpal Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YBK Jaiswal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YK Pathan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Younis Khan&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YS Chahal&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Yudhvir Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Yuvraj Singh&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YV Dhull&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;YV Takawale&quot;' />
+                  <groupfilter function='member' level='[none:batter:nk]' member='&quot;Z Khan&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]' direction='ASC' using='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:runs_batter:qk]' />
+          <slices>
+            <column>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:runs_batter:qk]' field-type='quantitative' max='13604' min='-880' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]' value='110' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='84' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:runs_batter:qk]</rows>
+        <cols>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]</cols>
+      </table>
+      <simple-id uuid='{5072EE6F-D16E-4AEE-8DB3-7108320E3245}' />
+    </worksheet>
+    <worksheet name='Top 5 Bowlers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_crunch_csv' name='federated.1btu2s70uklqwo1et0xel1u0xmwb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btu2s70uklqwo1et0xel1u0xmwb'>
+            <column caption='Wickets' datatype='integer' name='[Calculation_1536290429327556613]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [wicket_kind] != &quot;run out&quot;&#13;&#10;AND [wicket_kind] != &quot;retired hurt&quot;&#13;&#10;AND NOT ISNULL([wicket_kind])&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+            <column-instance column='[bowler]' derivation='None' name='[none:bowler:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1536290429327556613]' derivation='Sum' name='[sum:Calculation_1536290429327556613:qk]' pivot='key' type='quantitative' />
+            <column caption='Wicket Kind' datatype='string' name='[wicket_kind]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1536290429327556613])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:bowler:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]' direction='ASC' using='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:Calculation_1536290429327556613:qk]' />
+          <slices>
+            <column>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:Calculation_1536290429327556613:qk]' field-type='quantitative' max='205' min='-11' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]' value='92' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='164' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.88955801725387573' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:Calculation_1536290429327556613:qk]</rows>
+        <cols>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]</cols>
+      </table>
+      <simple-id uuid='{7153EA98-A996-434B-A68D-A03F70A24E80}' />
+    </worksheet>
+    <worksheet name='Toss winner vs Toss losers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_crunch_csv' name='federated.1btu2s70uklqwo1et0xel1u0xmwb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1btu2s70uklqwo1et0xel1u0xmwb'>
+            <column caption='Toss Result(winner)' datatype='string' name='[Calculation_1536290428819918849]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [toss_winner] =[winner]&#13;&#10;THEN &quot;Toss Winner Won Match&quot;&#13;&#10;ELSE &quot;Toss Winner Lost Match&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[match_id]' derivation='CountD' name='[ctd:match_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1536290428819918849]' derivation='None' name='[none:Calculation_1536290428819918849:nk]' pivot='key' type='nominal' />
+            <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[ctd:match_id:qk]' field-type='quantitative' max='796' min='-99' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819918849:nk]' value='257' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='80' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819918849:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.51574587821960449' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[ctd:match_id:qk]</rows>
+        <cols>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819918849:nk]</cols>
+      </table>
+      <simple-id uuid='{727C4477-9FC8-4466-92C9-0069A2528CAC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Toss winner vs Toss losers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819918849:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819918849:nk]</field>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:match_id:ok]</field>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:toss_winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DAA4BE29-8269-4D33-893B-39AF7C1F6878}' />
+    </window>
+    <window class='worksheet' name='Phase Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428822228994:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428819038208:nk]</field>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:Calculation_1536290428822228994:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F0B32477-700E-4116-BD21-E955DA73B33C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Top 5 Batters'>
+      <cards>
+        <edge name='left'>
+          <strip size='113'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:batter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1C1E024D-7E69-406E-83E3-A695742FB869}' />
+    </window>
+    <window class='worksheet' name='Top 5 Bowlers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[sum:Calculation_1536290429327556613:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1btu2s70uklqwo1et0xel1u0xmwb].[none:bowler:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E6843B6-B0E4-48E1-9829-8543F1B3BF0C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Phase Impact' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Top 5 Batters' width='192'>
+      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
+      /D8+AdlSTPtlFgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Top 5 Bowlers' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Toss winner vs Toss losers' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
